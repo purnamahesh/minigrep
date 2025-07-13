@@ -2,5 +2,14 @@
 name = "minigrep"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apacge-2.0"
+description = "mini grep "
 
 [dependencies]
+
+# build profiles 
+[profile.dev]
+opt-level = 0 # optimization level 0-3 
+
+[profile.release]
+opt-level = 3 # will increase compile time
